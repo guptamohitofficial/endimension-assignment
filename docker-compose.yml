@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./docker/api/Dockerfile
+    command: python /app/api/manage.py runserver 0:8000
+    expose:
+      - 8000
+    depends_on:
+      - redis
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
