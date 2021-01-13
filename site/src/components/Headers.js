@@ -65,7 +65,7 @@ export default class PrivateHeader extends Component {
                   <li className="nav-item my-auto">
                     <a
                       className="p-2 text-dark text-center"
-                      href="https://github.com/guptamohitofficial/endimension-sample"
+                      href="https://github.com/guptamohitofficial/endimension-assignment"
                     >
                       Download Source
                     </a>
@@ -152,38 +152,38 @@ export default class PrivateHeader extends Component {
               </div>
             </div>
           ) : (
-            <div
-              className="m-md-5 m-2"
-              style={{ position: "absolute", bottom: "0", right: "0" }}
-            >
-              {this.state.isNewMessage ? (
-                <span className="my-2" style={{ float: "left" }}>
-                  <div
-                    className="bg-danger py-1"
-                    style={{
-                      borderRadius: "50%",
-                      padding: "4px",
-                      width: "12px",
-                      height: "12px"
-                    }}
-                  ></div>
-                </span>
-              ) : null}
-
-              <span
-                className="btn btn-warning m-0"
-                onClick={() => {
-                  this.setState({ isChatWindow: true });
-                }}
-                style={{
-                  fontSize: "2em",
-                  borderRadius: "50%"
-                }}
+              <div
+                className="m-md-5 m-2"
+                style={{ position: "absolute", bottom: "0", right: "0" }}
               >
-                <span className="bx bx-chat p-0"></span>
-              </span>
-            </div>
-          )}
+                {this.state.isNewMessage ? (
+                  <span className="my-2" style={{ float: "left" }}>
+                    <div
+                      className="bg-danger py-1"
+                      style={{
+                        borderRadius: "50%",
+                        padding: "4px",
+                        width: "12px",
+                        height: "12px"
+                      }}
+                    ></div>
+                  </span>
+                ) : null}
+
+                <span
+                  className="btn btn-warning m-0"
+                  onClick={() => {
+                    this.setState({ isChatWindow: true });
+                  }}
+                  style={{
+                    fontSize: "2em",
+                    borderRadius: "50%"
+                  }}
+                >
+                  <span className="bx bx-chat p-0"></span>
+                </span>
+              </div>
+            )}
         </div>
       </div>
     );
